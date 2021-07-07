@@ -5,3 +5,10 @@ C:\Users\MTK15\source\repos\Course\DateStructure\obj\Debug\DateStructure.csprojA
 C:\Users\MTK15\source\repos\Course\DateStructure\obj\Debug\DateStructure.csproj.CoreCompileInputs.cache
 C:\Users\MTK15\source\repos\Course\DateStructure\obj\Debug\DateStructure.exe
 C:\Users\MTK15\source\repos\Course\DateStructure\obj\Debug\DateStructure.pdb
+C:\Users\MTK15\source\repos\Data structure and algorithm workbook\DateStructure\bin\Debug\DateStructure.exe.config
+C:\Users\MTK15\source\repos\Data structure and algorithm workbook\DateStructure\bin\Debug\DateStructure.exe
+C:\Users\MTK15\source\repos\Data structure and algorithm workbook\DateStructure\bin\Debug\DateStructure.pdb
+C:\Users\MTK15\source\repos\Data structure and algorithm workbook\DateStructure\obj\Debug\DateStructure.csprojAssemblyReference.cache
+C:\Users\MTK15\source\repos\Data structure and algorithm workbook\DateStructure\obj\Debug\DateStructure.csproj.CoreCompileInputs.cache
+C:\Users\MTK15\source\repos\Data structure and algorithm workbook\DateStructure\obj\Debug\DateStructure.exe
+C:\Users\MTK15\source\repos\Data structure and algorithm workbook\DateStructure\obj\Debug\DateStructure.pdb

@@ -18,7 +18,14 @@ namespace dataStructure
             {
                 a.AddLast(s[i]);
             }
-            a.Get(4);
+            Console.WriteLine(a);
+
+            LinkedList1<string> b = new LinkedList1<string>();
+            for (int i = 0; i < s.Length; i++)
+            {
+                b.AddFirst(s[i]);
+            }
+            Console.WriteLine(b);
             Console.Read();
         }
     }

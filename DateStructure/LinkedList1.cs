@@ -57,10 +57,18 @@ namespace dataStructure
             {
                 throw new ArgumentException("索引不合法");
             }
-            
+            //第一次写错漏写了一新建node的next
+            //if (index == 0)
+            //{
+            //    head = new Node(e);
+            //}
             if(index == 0)
             {
-                head = new Node(e);
+                //Node node = new Node(e);
+                //node.next = head;
+                //head = node;
+                //这三行简洁写为
+                head = new Node(e, head);
             }
             else
             {
@@ -69,9 +77,12 @@ namespace dataStructure
                 {
                     pre = pre.next;
                 }
-                Node node = new Node(e);
-                node.next = pre.next;
-                pre.next = node;
+
+                //Node node = new Node(e);
+                //node.next = pre.next;
+                //pre.next = node;
+                //这三行简洁写法为
+                pre.next = new Node(e, pre.next);
             }
 
             N++;
@@ -89,16 +100,14 @@ namespace dataStructure
         public override string ToString()
         {
             StringBuilder res = new StringBuilder();
-            res.Append(string.Format("LinkedList: count={0}                \n", N));
             //正常用法
-            //int i = 0;
-            //Node now = head;
-            //while (i < N)
-            //{
-            //    res.Append(now + "->");
-            //    now = now.next;
-            //    i++;
-            //}
+            Node cur = head;
+            while (cur != null)
+            {
+                res.Append(cur + "->");
+                cur = cur.next;
+            }
+
             //不知道为什么错误
             //Node now = head;
             //for (int i = 0; i < N ; i++)
@@ -111,11 +120,6 @@ namespace dataStructure
             //    now = now.next;
             //    i++;
             //}
-
-            for (Node cur = head;cur!=null;cur = cur.next)
-            {
-                res.Append(cur+ "->");
-            }
 
             res.Append("null");
             return res.ToString();
