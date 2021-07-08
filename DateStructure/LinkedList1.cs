@@ -50,7 +50,7 @@ namespace dataStructure
         {
             get { return N == 0; }
         }
-
+        //增加节点
         public void Add(int index, E e)
         {
             if (index < 0 || index > N)
@@ -62,7 +62,7 @@ namespace dataStructure
             //{
             //    head = new Node(e);
             //}
-            if(index == 0)
+            if (index == 0)
             {
                 //Node node = new Node(e);
                 //node.next = head;
@@ -95,6 +95,141 @@ namespace dataStructure
         public void AddLast(E e)
         {
             Add(N, e);
+        }
+        //查找
+        public E Get(int index)
+        {
+            if (index < 0 || index > N)
+            {
+                throw new ArgumentException("索引不合法");
+            }
+            Node cur = head;
+            for (int i = 0; i < index; i++)
+            {
+                cur = cur.next;
+            }
+            return cur.e;
+        }
+        public E GetFirst()
+        {
+            return Get(0);
+        }
+        public E GetLast()
+        {
+            return Get(N - 1);
+        }
+        public bool Contains(E e)
+        {
+            Node cur = head;
+            while (cur != null)
+            {
+                if (cur.e.Equals(e))
+                {
+                    return true;
+                }
+                cur = cur.next;
+            }
+            return false;
+        }
+        public int IndexOf(E e)
+        {
+            int index = 0;
+            Node cur = head;
+            while (cur != null)
+            {
+                if (cur.e.Equals(e))
+                {
+                    return index;
+                }
+                cur = cur.next;
+                index++;
+            }
+            return -1;
+        }
+        //更改
+        public void Set(int index, E newE)
+        {
+            if (index < 0 || index > N)
+            {
+                throw new ArgumentException("索引不合法");
+            }
+            Node cur = head;
+            for (int i = 0; i < index; i++)
+            {
+                cur = cur.next;
+            }
+            cur.e = newE;
+        }
+
+
+        public E RemoveAt(int index)
+        {
+            if (index < 0 || index > N)
+            {
+                throw new ArgumentException("索引不合法");
+            }
+            if(head == null)
+            {
+                throw new ArgumentException("链表为空");
+            }
+            if (index == 0)
+            {
+                Node delNode = head;
+                head = head.next;
+                N--;
+                return delNode.e;
+            }
+            else
+            {
+                Node pre = head;
+                for (int i = 0; i < index - 1; i++)
+                {
+                    pre = pre.next;
+                }
+                Node delNode = pre.next;
+                pre.next = delNode.next;
+                N--;
+                return delNode.e;
+            }
+        }
+        public E RemoveFirst()
+        {
+            return RemoveAt(0);
+        }
+        public E RemoveLast()
+        {
+            return RemoveAt(N - 1);
+        }
+        public void Remove(E e)
+        {
+            if(head == null)
+            {
+                return;
+            }
+            if(head.e.Equals(e))
+            {
+                head = head.next;
+                N--;
+            }
+            else
+            {
+                Node cur = head;
+                Node pre = null;
+                while (cur != null)
+                {
+                    if (cur.e.Equals(e))
+                    {
+                        break;
+                    }
+                    pre = cur;
+                    cur = cur.next;
+                }
+                if (cur != null)
+                {
+                    pre = pre.next.next;
+                    N--;
+                }
+            }
         }
 
         public override string ToString()
