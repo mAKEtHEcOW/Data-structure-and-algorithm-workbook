@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{4DC83E4A-C082-40B0-8185-6056A385548C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DateStructure</RootNamespace>
-    <AssemblyName>DateStructure</AssemblyName>
+    <RootNamespace>dataStructure</RootNamespace>
+    <AssemblyName>DataStructure</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,7 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Array1.cs" />
+    <Compile Include="Array1Stack.cs" />
+    <Compile Include="IStack.cs" />
     <Compile Include="LinkedList1.cs" />
+    <Compile Include="LinkedList1Stack.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
