@@ -25,7 +25,23 @@ namespace dataStructure
             {
                 b.AddFirst(s[i]);
             }
+
             Console.WriteLine(b);
+            Array1Stack<string> stack = new Array1Stack<string>();
+
+            for (int i = 0; i < s.Length; i++)
+            {
+                stack.push(s[i]);
+                Console.WriteLine(stack);
+            }
+            LinkedList1Stack<string> stack2 = new LinkedList1Stack<string>();
+
+            for (int i = 0; i < s.Length; i++)
+            {
+                stack2.push(s[i]);
+                Console.WriteLine(stack2);
+            }
+            
             Console.Read();
         }
     }
