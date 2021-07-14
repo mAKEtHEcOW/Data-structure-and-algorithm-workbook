@@ -13,36 +13,35 @@ namespace dataStructure
         static void Main(string[] args)
         {
             string[] s = { "a", "b", "c", "d" };
-            Array1<string> a = new Array1<string>();
-            for (int i = 0; i < s.Length; i++)
-            {
-                a.AddLast(s[i]);
-            }
-            Console.WriteLine(a);
+            int N = 100000;
+            Array1Queue<int> queue1 = new Array1Queue<int>();
+            long t1 = Test.TestQueue(queue1, N);
 
-            LinkedList1<string> b = new LinkedList1<string>();
-            for (int i = 0; i < s.Length; i++)
-            {
-                b.AddFirst(s[i]);
-            }
+            Console.WriteLine("Queue1: " + t1 + "ms");//18670ms 
 
-            Console.WriteLine(b);
-            Array1Stack<string> stack = new Array1Stack<string>();
+            Array2Queue<int> queue2 = new Array2Queue<int>();
+            long t2 = Test.TestQueue(queue2, N);//
+            Console.WriteLine("Queue2: " + t2 + "ms");//8ms
 
-            for (int i = 0; i < s.Length; i++)
+            Console.ReadKey();
+        }
+    }
+    class Test
+    {
+        public static long TestQueue(IQueue<int> queue, int N)
+        {
+            Stopwatch t1 = new Stopwatch();
+            t1.Start();
+            for (int i = 0; i < N; i++)
             {
-                stack.push(s[i]);
-                Console.WriteLine(stack);
+                queue.Enqueue(i);
             }
-            LinkedList1Stack<string> stack2 = new LinkedList1Stack<string>();
-
-            for (int i = 0; i < s.Length; i++)
+            for (int i = 0; i < N; i++)
             {
-                stack2.push(s[i]);
-                Console.WriteLine(stack2);
+                queue.Dequeue();
             }
-            
-            Console.Read();
+            t1.Stop();
+            return t1.ElapsedMilliseconds;
         }
     }
 }

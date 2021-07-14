@@ -22,7 +22,7 @@ namespace dataStructure
         public Array1() : this(10) { }//等价于下面注释
         //public Array1()
         //{
-        //    data = new int[10];
+        //    data = new E[10];
         //    N = 0;
         //}
 
