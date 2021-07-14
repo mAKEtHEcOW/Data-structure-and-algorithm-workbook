@@ -13,7 +13,7 @@ namespace dataStructure
 
         public bool isEmpty { get { return list.isEmpty; } }
 
-        public void push(E e)
+        public void Push(E e)
         {
             list.AddFirst(e);
         }
@@ -24,7 +24,7 @@ namespace dataStructure
         }
 
         
-        public E peak()
+        public E Peak()
         {
             return list.GetFirst();
         }

@@ -6,13 +6,16 @@ using System.Threading.Tasks;
 
 namespace dataStructure
 {
-    interface IStack<E>
+    interface IQueue<E>
     {
         int Count { get; }
-        bool isEmpty { get; }
-        void Push(E e);
-        E Pop();
+
+        bool IsEmpty { get; }
+
+        void Enqueue(E e);
+
+        E Dequeue();
+
         E Peak();
-        
     }
 }

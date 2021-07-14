@@ -6,42 +6,41 @@ using System.Threading.Tasks;
 
 namespace dataStructure
 {
-    class Array1Stack<E>:IStack<E>
+    class Array1Queue<E> : IQueue<E>
     {
         private Array1<E> arr;
 
         public int Count { get { return arr.Count; } }
 
-        public bool isEmpty { get { return arr.IsEmpty; } }
+        public bool IsEmpty { get { return arr.IsEmpty; } }
 
-        public Array1Stack(int capacity)
+        public Array1Queue(int capacity)
         {
             arr = new Array1<E>(capacity);
         }
-
-        public Array1Stack()
+        public Array1Queue()
         {
             arr = new Array1<E>();
         }
 
-        public void Push(E e)
+        public E Dequeue()
+        {
+            return arr.RemoveFirst();
+        }
+
+        public void Enqueue(E e)
         {
             arr.AddLast(e);
         }
 
-        public E Pop()
-        {
-            return arr.RemoveLast();
-        }
-
         public E Peak()
         {
-            return arr.GetLast();
+            return arr.GetFirst();
         }
 
         public override string ToString()
         {
-            return "Stack: " + arr.ToString() + "top";
+            return "Queue: front " + arr.ToString() + "tail";
         }
     }
 }
