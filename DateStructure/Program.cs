@@ -13,16 +13,25 @@ namespace dataStructure
         static void Main(string[] args)
         {
             string[] s = { "a", "b", "c", "d" };
-            int N = 100000;
-            Array1Queue<int> queue1 = new Array1Queue<int>();
-            long t1 = Test.TestQueue(queue1, N);
+            //int N = 100000;
+            //Array1Queue<int> queue1 = new Array1Queue<int>();
+            //long t1 = Test.TestQueue(queue1, N);
 
-            Console.WriteLine("Queue1: " + t1 + "ms");//18670ms 
+            //Console.WriteLine("Queue1: " + t1 + "ms");//18670ms 
 
-            Array2Queue<int> queue2 = new Array2Queue<int>();
-            long t2 = Test.TestQueue(queue2, N);//
-            Console.WriteLine("Queue2: " + t2 + "ms");//8ms
+            //Array2Queue<int> queue2 = new Array2Queue<int>();
+            //long t2 = Test.TestQueue(queue2, N);//
+            //Console.WriteLine("Queue2: " + t2 + "ms");//8ms
 
+            LinkedList2Queue<int> queue = new LinkedList2Queue<int>();
+            queue.Enqueue(3);
+            queue.Enqueue(3);
+            queue.Enqueue(2);
+            queue.Enqueue(2);
+            queue.Enqueue(2);
+            Console.WriteLine(queue);
+            queue.Dequeue();
+            Console.WriteLine(queue);
             Console.ReadKey();
         }
     }
