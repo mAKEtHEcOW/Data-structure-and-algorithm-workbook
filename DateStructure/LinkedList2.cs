@@ -47,17 +47,18 @@ namespace dataStructure
 
         public void AddLast(E e)
         {
+            Node node = new Node(e);
             if (IsEmpty)
             {
                 //错误写法
                 //head = new Node(e);
                 //tail = new Node(e);
-                head = tail = new Node(e);
+                head = tail = node;
             }
             else
             {
-                tail.next = new Node(e);
-                tail = tail.next;
+                tail.next = node;
+                tail = node;
                 
             }
             N++;

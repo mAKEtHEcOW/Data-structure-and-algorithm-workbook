@@ -49,8 +49,10 @@
     <Compile Include="Array2.cs" />
     <Compile Include="Array2Queue.cs" />
     <Compile Include="IQueue.cs" />
+    <Compile Include="ISet.cs" />
     <Compile Include="IStack.cs" />
     <Compile Include="LinkedList1.cs" />
+    <Compile Include="LinkedList1Set.cs" />
     <Compile Include="LinkedList1Stack.cs" />
     <Compile Include="LinkedList2.cs" />
     <Compile Include="LinkedList2Queue.cs" />
