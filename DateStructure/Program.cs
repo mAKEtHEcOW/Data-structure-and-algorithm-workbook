@@ -25,12 +25,14 @@ namespace dataStructure
 
             LinkedList2Queue<int> queue = new LinkedList2Queue<int>();
             queue.Enqueue(3);
-            queue.Enqueue(3);
-            queue.Enqueue(2);
-            queue.Enqueue(2);
-            queue.Enqueue(2);
+            Console.WriteLine(queue);
+            queue.Enqueue(1);
             Console.WriteLine(queue);
             queue.Dequeue();
+            Console.WriteLine(queue);
+            queue.Dequeue();
+            Console.WriteLine(queue);
+            queue.Enqueue(2);
             Console.WriteLine(queue);
             Console.ReadKey();
         }
