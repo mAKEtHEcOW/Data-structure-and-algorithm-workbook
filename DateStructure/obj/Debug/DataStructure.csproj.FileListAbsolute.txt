@@ -5,3 +5,5 @@ C:\Users\MTK15\source\repos\Data structure and algorithm workbook\DateStructure\
 C:\Users\MTK15\source\repos\Data structure and algorithm workbook\DateStructure\bin\Debug\DataStructure.pdb
 C:\Users\MTK15\source\repos\Data structure and algorithm workbook\DateStructure\obj\Debug\DataStructure.exe
 C:\Users\MTK15\source\repos\Data structure and algorithm workbook\DateStructure\obj\Debug\DataStructure.pdb
+D:\repos\Data-structure-and-algorithm-workbook\DateStructure\obj\Debug\DataStructure.exe
+D:\repos\Data-structure-and-algorithm-workbook\DateStructure\obj\Debug\DataStructure.pdb
