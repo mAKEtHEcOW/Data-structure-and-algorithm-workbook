@@ -57,7 +57,7 @@ namespace dataStructure
             {
                 throw new ArgumentException("索引不合法");
             }
-            //第一次写错漏写了一新建node的next
+            //第一次写错漏写了一新建node的next，没有连起来，一共两步，初始化、连接。
             //if (index == 0)
             //{
             //    head = new Node(e);
