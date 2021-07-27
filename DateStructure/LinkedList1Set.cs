@@ -10,23 +10,38 @@ namespace dataStructure
     {
 
         private LinkedList1<E> list = new LinkedList1<E>();
-        public int Count => throw new NotImplementedException();
+        public int Count { get { return list.Count; } }
 
-        public bool IsEmpty => throw new NotImplementedException();
+        public bool IsEmpty { get { return list.isEmpty; } }
 
         public void Add(E e)
         {
-            throw new NotImplementedException();
+            if(IsEmpty)
+            {
+                list.AddFirst(e);
+                return;
+            }
+            if (Contains(e))
+            {
+                Console.WriteLine("该元素已存在");
+                return;
+            }
+            list.AddFirst(e);
         }
 
         public bool Contains(E e)
         {
-            throw new NotImplementedException();
+            return list.Contains(e);
         }
 
         public void Remove(E e)
         {
-            throw new NotImplementedException();
+            list.Remove(e);
+        }
+
+        public override string ToString()
+        {
+            return list.ToString();
         }
     }
 }
