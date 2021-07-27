@@ -13,19 +13,20 @@ namespace dataStructure
         static void Main(string[] args)
         {
             string[] s = { "a", "b", "c", "d" };
-            LinkedList1Set<string> set = new LinkedList1Set<string>();
-            Console.WriteLine(set);
+            LinkedList3Dictionary<int, string> dick = new LinkedList3Dictionary<int, string>();
+
             for (int i = 0; i < s.Length; i++)
             {
-                set.Add(s[i]);
+                dick.Add(i, s[i]);
             }
-            Console.WriteLine(set);
-            set.Add(s[1]);
-            Console.WriteLine(set);
-            set.Remove("a");
-            Console.WriteLine(set);
+
+            Console.WriteLine(dick);
+
+
             Console.ReadKey();
-          
+
+
+
         }
     }
     class Test

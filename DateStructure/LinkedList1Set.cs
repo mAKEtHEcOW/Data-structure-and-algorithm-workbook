@@ -23,7 +23,6 @@ namespace dataStructure
             }
             if (Contains(e))
             {
-                Console.WriteLine("该元素已存在");
                 return;
             }
             list.AddFirst(e);

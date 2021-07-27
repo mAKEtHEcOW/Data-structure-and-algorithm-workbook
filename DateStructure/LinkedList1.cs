@@ -161,7 +161,7 @@ namespace dataStructure
             cur.e = newE;
         }
 
-
+        //删除
         public E RemoveAt(int index)
         {
             if (index < 0 || index > N)
@@ -196,10 +196,12 @@ namespace dataStructure
         {
             return RemoveAt(0);
         }
+
         public E RemoveLast()
         {
             return RemoveAt(N - 1);
         }
+
         public void Remove(E e)
         {
             if(head == null)
@@ -226,7 +228,7 @@ namespace dataStructure
                 }
                 if (cur != null)
                 {
-                    pre = pre.next.next;
+                    pre.next = pre.next.next;
                     N--;
                 }
             }
@@ -244,15 +246,15 @@ namespace dataStructure
             }
 
             //不知道为什么错误
-            //Node now = head;
+            //Node cur = head;
             //for (int i = 0; i < N ; i++)
             //{
             //    res.Append(now);
-            //    if (now.next != null)
+            //    if (cur.next != null)
             //    {
             //        res.Append("->");
             //    }
-            //    now = now.next;
+            //    cur = cur.next;
             //    i++;
             //}
 
