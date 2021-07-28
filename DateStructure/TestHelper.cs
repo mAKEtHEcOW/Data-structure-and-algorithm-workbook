@@ -32,7 +32,7 @@ namespace dataStructure
                 //寻找contents第一个字母的位置
                 int start = FirstCharacterIndex(contents, 0);
 
-                //开始分词洛基，讲一个个的单词存储在数组words中
+                //开始分词逻辑，讲一个个的单词存储在数组words中
                 for (int i = start; i < contents.Length; i++)
                 {
                     if (i == contents.Length || !Char.IsLetter(contents[i]))

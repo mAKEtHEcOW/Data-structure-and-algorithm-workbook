@@ -13,6 +13,11 @@ namespace dataStructure
 
         public bool IsEmpty { get { return list.IsEmpty; } }
 
+        public LinkedList3Dictionary()
+        {
+            list = new LinkedList3<key, Value>();
+        }
+
         public void Add(key key, Value value)
         {
             list.Add(key, value);
