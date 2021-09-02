@@ -13,26 +13,30 @@ namespace dataStructure
         static void Main(string[] args)
         {
             string[] s = { "a", "b", "c", "d" };
-            Console.WriteLine("My Beloved Teacher");
-            List<string> words = TestHelper.ReadFile("测试文件1/My Beloved Teacher.txt");
-            Console.WriteLine("总单词数: " + words.Count);
-            Stopwatch t1 = new Stopwatch();
-            LinkedList3Dictionary<string,int> dick = new LinkedList3Dictionary<string,int>();
+            Console.WriteLine(Elements.NumOfElement("CaCO2"));
 
-            t1.Start();
-            foreach(var word in words)
-            {
-                if (!dick.ContainsKey(word))
-                    dick.Add(word, 1);
-                else
-                {
-                    dick.Set(word, dick.Get(word) + 1);
-                }
-            }
-            t1.Stop();
-            Console.WriteLine("不同的单词总数：" + dick.Count);
-            Console.WriteLine("sara出现的频次: " + dick.Get("sara"));
 
+
+            //Console.WriteLine("My Beloved Teacher");
+            //List<string> words = TestHelper.ReadFile("测试文件1/My Beloved Teacher.txt");
+            //Console.WriteLine("总单词数: " + words.Count);
+            //Stopwatch t1 = new Stopwatch();
+            //LinkedList3Dictionary<string,int> dick = new LinkedList3Dictionary<string,int>();
+
+            //t1.Start();
+            //foreach(var word in words)
+            //{
+            //    if (!dick.ContainsKey(word))
+            //        dick.Add(word, 1);
+            //    else
+            //    {
+            //        dick.Set(word, dick.Get(word) + 1);
+            //    }
+            //}
+            //t1.Stop();
+            //Console.WriteLine("不同的单词总数：" + dick.Count);
+            //Console.WriteLine("sara出现的频次: " + dick.Get("sara"));
+            //Console.WriteLine("运行时间: " + t1.ElapsedMilliseconds + "ms");
 
 
             Console.ReadKey();

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace dataStructure
 {
-    class StackWithMax
+    class StackWithMax<E> where E : IComparable
     {
         List<int> list = new List<int>();
         private int N = 0;
@@ -27,8 +27,7 @@ namespace dataStructure
         public int Max()
         {
             int max = -1000000;
-            int num = N;
-            for (int i = 0; i < num; i++)
+            for (int i = 0; i < N; i++)
             {
                 int temp = Pop();
                 if (temp > max)

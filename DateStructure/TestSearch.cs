@@ -20,11 +20,11 @@ namespace dataStructure
                 // l+(r-1)/2 = l+(r/2-l/2) = l/2 + r/2 = (l+r)/2
                 int mid = l + (r - l) / 2;
                 if (target < arr[mid])
-                    r = mid - 1;
+                    r = mid - 1;            //在arr[l...mid-1]查找target
                 else if (target > arr[mid])
-                    l = mid + 1;
+                    l = mid + 1;            //在arr[mid+1...r]查找target
                 else
-                    return mid;
+                    return mid;             //找到target，并返回索引
             }
 
             return -1;
