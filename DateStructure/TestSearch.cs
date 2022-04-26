@@ -17,7 +17,7 @@ namespace dataStructure
             {
                 //会出现整型溢出
                 //int mid = (l + r) / 2; 
-                // l+(r-1)/2 = l+(r/2-l/2) = l/2 + r/2 = (l+r)/2
+                // l+(r-l)/2 = l+(r/2-l/2) = l/2 + r/2 = (l+r)/2
                 int mid = l + (r - l) / 2;
                 if (target < arr[mid])
                     r = mid - 1;            //在arr[l...mid-1]查找target

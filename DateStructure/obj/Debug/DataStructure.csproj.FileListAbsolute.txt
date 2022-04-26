@@ -12,3 +12,10 @@ D:\repos\Data-structure-and-algorithm-workbook\DateStructure\bin\Debug\DataStruc
 D:\repos\Data-structure-and-algorithm-workbook\DateStructure\bin\Debug\DataStructure.pdb
 D:\repos\Data-structure-and-algorithm-workbook\DateStructure\obj\Debug\DataStructure.csproj.AssemblyReference.cache
 D:\repos\Data-structure-and-algorithm-workbook\DateStructure\obj\Debug\DataStructure.csproj.CoreCompileInputs.cache
+C:\Users\mtk15\source\repos\Data-structure-and-algorithm-workbook\DateStructure\bin\Debug\DataStructure.exe.config
+C:\Users\mtk15\source\repos\Data-structure-and-algorithm-workbook\DateStructure\bin\Debug\DataStructure.exe
+C:\Users\mtk15\source\repos\Data-structure-and-algorithm-workbook\DateStructure\bin\Debug\DataStructure.pdb
+C:\Users\mtk15\source\repos\Data-structure-and-algorithm-workbook\DateStructure\obj\Debug\DataStructure.csproj.AssemblyReference.cache
+C:\Users\mtk15\source\repos\Data-structure-and-algorithm-workbook\DateStructure\obj\Debug\DataStructure.csproj.CoreCompileInputs.cache
+C:\Users\mtk15\source\repos\Data-structure-and-algorithm-workbook\DateStructure\obj\Debug\DataStructure.exe
+C:\Users\mtk15\source\repos\Data-structure-and-algorithm-workbook\DateStructure\obj\Debug\DataStructure.pdb

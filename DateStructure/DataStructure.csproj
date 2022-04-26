@@ -48,7 +48,6 @@
     <Compile Include="Array1Stack.cs" />
     <Compile Include="Array2.cs" />
     <Compile Include="Array2Queue.cs" />
-    <Compile Include="Element.cs" />
     <Compile Include="IDictionary.cs" />
     <Compile Include="IQueue.cs" />
     <Compile Include="ISet.cs" />
@@ -67,6 +66,7 @@
     <Compile Include="StackWithMax.cs" />
     <Compile Include="TestHelper.cs" />
     <Compile Include="TestSearch.cs" />
+    <Compile Include="TwoqueuesImplementAStack.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

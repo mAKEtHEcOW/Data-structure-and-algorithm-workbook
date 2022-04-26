@@ -30,8 +30,9 @@ namespace dataStructure
             while (l <= r)
             {
                 //会出现整型溢出
-                //int mid = (l + r) / 2; 
-                // l+(r-1)/2 = l+(r/2-l/2) = l/2 + r/2 = (l+r)/2
+                //int mid = (l+r) / 2; 
+                // l/2+r/2 = (l-l/2)+2/r =l+(2/r-l/2) =l+(r-l)/2
+
                 int mid = l + (r - l) / 2;
                 if (key.CompareTo(keys[mid]) < 0)
                     r = mid - 1;            //在keys[l...mid-1]查找key
@@ -41,7 +42,7 @@ namespace dataStructure
                     return mid;             //找到target，并返回索引
             }
 
-            return 1;
+            return l;
         }
 
         public void Add(Key key)
